@@ -1,6 +1,5 @@
 import Container from "./Container";
 
-// cacheComponents is on, so reading the clock has to happen inside a cached scope.
 async function currentYear() {
   "use cache";
   return new Date().getFullYear();

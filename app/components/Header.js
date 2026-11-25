@@ -3,7 +3,12 @@
 import { useState } from "react";
 import Container from "./Container";
 import Logo from "./Logo";
-import { navLinks } from "@/app/data/nav";
+
+const navLinks = [
+  { href: "#capabilities", label: "Capabilities" },
+  { href: "#approach", label: "Approach" },
+  { href: "#contact", label: "Contact" },
+];
 
 export default function Header() {
   const [open, setOpen] = useState(false);

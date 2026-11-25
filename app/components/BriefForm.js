@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { capabilities } from "@/app/data/capabilities";
+import { capabilities } from "./Capabilities";
 
 const scopes = capabilities.map((c) => c.title);
 const emptyForm = { name: "", email: "", notes: "" };
@@ -12,7 +12,7 @@ const inputClass =
 export default function BriefForm() {
   const [form, setForm] = useState(emptyForm);
   const [picked, setPicked] = useState([]);
-  const [status, setStatus] = useState(null); // { type: "error" | "success", message }
+  const [status, setStatus] = useState(null);
 
   const update = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
@@ -34,7 +34,6 @@ export default function BriefForm() {
       return;
     }
 
-    // TODO: send this somewhere real (API route, Formspree, etc). For now we just confirm.
     const areas = picked.length ? ` Selected areas: ${picked.join(", ")}.` : "";
     setStatus({
       type: "success",
