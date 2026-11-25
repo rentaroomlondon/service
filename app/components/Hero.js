@@ -23,9 +23,8 @@ export default function Hero() {
             </h1>
 
             <p className="max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-              We design, build, and ship full-stack applications, live video platforms, signal
-              pipelines, and edge AI as one cohesive product, so you don&apos;t have to stitch
-              three vendors together.
+              We build web apps, live video platforms, signal pipelines and edge AI as one product,
+              so you&apos;re not stuck wiring three vendors together and hoping it holds.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">

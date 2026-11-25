@@ -11,7 +11,7 @@ const jetbrains = JetBrains_Mono({
 export const metadata = {
   title: "Kiln Systems — Full-Stack, Video, Edge & Signal Engineering",
   description:
-    "Software and systems engineering from the sensor to the browser. Full-stack apps, video management, signal processing, edge AI, and cloud operations.",
+    "We develop software for online and mobile applications, video systems, signal processing, edge AI, and cloud operations, all of which run from the sensor to the browser.",
 };
 
 export default function RootLayout({ children }) {

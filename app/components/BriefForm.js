@@ -29,15 +29,15 @@ export default function BriefForm() {
     if (!name || !looksLikeEmail || !form.notes.trim()) {
       setStatus({
         type: "error",
-        message: "Please provide your name, a valid work email, and a brief note about your system.",
+        message: "Please add your name, a work email we can reply to, and a short note about your system.",
       });
       return;
     }
 
-    const areas = picked.length ? ` Selected areas: ${picked.join(", ")}.` : "";
+    const areas = picked.length ? ` You picked: ${picked.join(", ")}.` : "";
     setStatus({
       type: "success",
-      message: `Thanks, ${name}. Your brief is with our engineering team.${areas} We'll follow up at ${email} within one business day.`,
+      message: `Thanks, ${name}. An engineer will read your brief and reply to ${email} within one business day.${areas}`,
     });
     setForm(emptyForm);
     setPicked([]);
@@ -115,7 +115,7 @@ export default function BriefForm() {
           name="notes"
           rows={4}
           required
-          placeholder="Briefly describe your sensors, camera streams, target deployment environment, or product goals..."
+          placeholder="What cameras or sensors are you working with, where will it run, and what are you trying to build?"
           value={form.notes}
           onChange={update}
           className={inputClass}
@@ -136,7 +136,7 @@ export default function BriefForm() {
       )}
 
       <div className="flex flex-col justify-between gap-4 pt-1 sm:flex-row sm:items-center">
-        <span className="text-xs text-subtle">NDA available prior to technical discovery.</span>
+        <span className="text-xs text-subtle">Happy to sign an NDA before we get into the details.</span>
         <button
           type="submit"
           className="rounded-md bg-cobalt px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-cobalt-dark"

@@ -8,14 +8,14 @@ export default function Contact() {
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="space-y-5 lg:col-span-5">
             <span className="font-mono text-xs font-medium uppercase tracking-wider text-cobalt">
-              Start a Conversation
+              Get in touch
             </span>
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-              Tell us what you are building.
+              What are you building?
             </h2>
             <p className="text-sm leading-relaxed text-muted sm:text-base">
-              Share a rough outline of your system, hardware environment, or timeline. You&apos;ll
-              speak directly with a principal engineer, never a sales script.
+              Send us a rough sketch of the system, the hardware you have, or your timeline. You&apos;ll
+              talk to a senior engineer, not a salesperson.
             </p>
 
             <dl className="space-y-3 pt-4 text-sm">

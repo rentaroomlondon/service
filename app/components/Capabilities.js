@@ -71,9 +71,9 @@ export default function Capabilities() {
     <section id="capabilities" className="border-b border-rule py-16 sm:py-24">
       <Container>
         <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
-          <SectionHeading eyebrow="Capabilities" title="Six disciplines under one engineering roof">
-            Engage us for a single technical bottleneck or an entire vertical product, from
-            hardware ingest to customer dashboard.
+          <SectionHeading eyebrow="Capabilities" title="Six things we do, all in-house">
+            Bring us one tricky technical problem or a whole product. We can cover everything from
+            the hardware feed to the dashboard your customers log into.
           </SectionHeading>
 
           <div className="flex flex-wrap gap-2" aria-label="Filter capabilities">

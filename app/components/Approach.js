@@ -3,16 +3,16 @@ import SectionHeading from "./SectionHeading";
 
 const steps = [
   {
-    title: "Architecture & Constraints",
-    text: "We map bandwidth limits, data residency rules, hardware specs, and operator workflows before writing production code.",
+    title: "Architecture and Limitations",
+    text: "We map operator procedures, hardware specs, bandwidth restrictions, and data residency regulations before developing production code.",
   },
   {
-    title: "Working Vertical Slices",
-    text: "Within weeks, real sensor or camera feeds flow through the processing pipeline into a usable web interface you can test on site.",
+    title: "Start a functional slice.",
+    text: "Real sensor or camera feeds are processed into a useful web interface that you can test on-site in a matter of weeks.",
   },
   {
-    title: "Hardening & Clean Handoff",
-    text: "Automated deployments, observability dashboards, and clear documentation so your team owns the stack with confidence.",
+    title: "Harden it, then hand it over",
+    text: "We set up automated deploys, monitoring and plain docs, so your own team can run the system without us.",
   },
 ];
 
@@ -21,9 +21,9 @@ export default function Approach() {
     <section id="approach" className="border-b border-rule bg-surface py-16 sm:py-24">
       <Container>
         <div className="mb-12">
-          <SectionHeading eyebrow="How We Work" title="One team, zero handoff gaps">
-            When hardware engineers, ML researchers, and web developers sit in separate companies,
-            integration is where timelines break. We build vertical slices from day one.
+          <SectionHeading eyebrow="How We Work" title="One team, start to finish">
+            Projects tend to stall when the hardware people, the ML people and the web people work for
+            three different companies. We keep them on one team and get a rough end-to-end version working early.
           </SectionHeading>
         </div>
 

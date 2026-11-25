@@ -11,7 +11,7 @@ const layers = [
     readout: "LAYER 01 // EDGE_RUNTIME",
     latency: "< 15ms local",
     detail:
-      "Local ONNX inference runs directly on site gateways. Sensor buffers persist locally during network dropouts and sync automatically once connectivity returns.",
+      "Models run right on the gateway at your site. If the network drops, sensor data is kept locally and syncs once the connection comes back.",
   },
   {
     id: "signals",
@@ -21,7 +21,7 @@ const layers = [
     readout: "LAYER 02 // SIGNAL_AND_MEDIA",
     latency: "Real-time stream",
     detail:
-      "RTSP camera feeds and raw thermal or audio telemetry are filtered, synchronized, and indexed into searchable clips using C++, FFmpeg, and SciPy.",
+      "Camera feeds and raw thermal or audio data get cleaned up, lined up in time, and cut into clips you can search. We do this with C++, FFmpeg and SciPy.",
   },
   {
     id: "ai",
@@ -31,7 +31,7 @@ const layers = [
     readout: "LAYER 03 // AI_AUTOMATION",
     latency: "Human-in-the-loop",
     detail:
-      "Vision and document models classify routine events and draft structured reports, escalating low-confidence cases to operators for review.",
+      "Vision and document models deal with the routine events and draft the reports. Anything the model isn't sure about goes to a person.",
   },
   {
     id: "app",
@@ -41,7 +41,7 @@ const layers = [
     readout: "LAYER 04 // FULLSTACK_CLOUD",
     latency: "Regional SLA",
     detail:
-      "Operators monitor live WebRTC feeds, replay incidents, and manage device fleets inside a role-gated web console hosted in your chosen region.",
+      "Operators watch live feeds, replay incidents and manage devices from one web console. Access is set by role, and it's hosted in the region you pick.",
   },
 ];
 
@@ -64,8 +64,8 @@ export default function PipelineInspector() {
       </div>
 
       <p className="mb-4 mt-3 text-xs text-muted">
-        Select a layer below to inspect how hardware telemetry and camera streams move into
-        user-facing software.
+        Click a layer to see how data from cameras and sensors makes its way into the software
+        people actually use.
       </p>
 
       <div className="space-y-2" role="group" aria-label="Architecture layers">
